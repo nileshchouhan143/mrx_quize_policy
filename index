@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - MRX Quize</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 20px; line-height: 1.6; color: #333; max-width: 800px; margin: auto; }
+        h1, h2, h3 { color: #2c3e50; }
+        .last-updated { font-style: italic; color: #7f8c8d; margin-bottom: 20px; }
+        .section { margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px; }
+        ul { padding-left: 20px; }
+        a { color: #3498db; text-decoration: none; }
+        .important { background: #fdf2f2; padding: 10px; border-left: 5px solid #e74c3c; margin: 10px 0; }
+    </style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="last-updated">Last Updated: December 29, 2025</p>
+
+<div class="section">
+    <p>Welcome to <strong>MRX Quize</strong>. This Privacy Policy explains how we handle information in our mobile application. By using this app, you agree to the terms outlined below.</p>
+</div>
+
+<div class="section">
+    <h2>1. Information Collection and Use</h2>
+    <p><strong>Personal Data:</strong> We are committed to your privacy. We do <strong>NOT</strong> collect, store, or share any personally identifiable information (PII) such as your Name, Email Address, Phone Number, or Physical Location. Our app does not require any Login or Account creation.</p>
+
+    <div class="important">
+        <strong>Virtual Currency:</strong> The "Spin Wheel" and Quiz rewards provide virtual coins. These coins are used strictly for entertainment to unlock levels within the app. <strong>These coins have NO real-world monetary value, cannot be withdrawn, and cannot be exchanged for real currency.</strong>
+    </div>
+</div>
+
+<div class="section">
+    <h2>2. Third-Party Service Providers & Ads</h2>
+    <p>To support the development and provide rewards (Double Coins/Unlock Levels), we use third-party services that may collect information used to identify your device (via Advertising IDs).</p>
+    <ul>
+        <li><a href="https://www.google.com/policies/privacy/" target="_blank">Google Play Services</a></li>
+        <li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank">AdMob (Rewarded & Banner Ads)</a></li>
+    </ul>
+    <p>AdMob may use your <strong>Google Advertising ID</strong> to show personalized ads. You can reset or opt-out of this in your device settings under Google > Ads.</p>
+</div>
+
+<div class="section">
+    <h2>3. Data Storage (Local Only)</h2>
+    <p>We use an on-device database (Room DB and SharedPreferences) to save your quiz progress, high scores, and unlocked levels. <strong>This data stays 100% on your device</strong> and is never uploaded to any external server or shared with third parties.</p>
+</div>
+
+<div class="section">
+    <h2>4. Data Deletion Rights</h2>
+    <p>Since we do not store your data on any server, you have full control over your data. You can delete all your progress and coins by "Clearing App Data" in your device's application settings or by uninstalling the app.</p>
+</div>
+
+<div class="section">
+    <h2>5. Children’s Privacy</h2>
+    <p>Our app is not specifically directed towards children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent and aware that your child has provided us with personal information, please contact us.</p>
+</div>
+
+<div class="section">
+    <h2>6. Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+    <p><strong>Email:</strong> mrxofficial000000@gmail.com</p>
+</div>
+
+</body>
+</html>
