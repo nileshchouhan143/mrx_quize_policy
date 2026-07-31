@@ -11,16 +11,17 @@
         .last-updated { font-style: italic; color: #7f8c8d; margin-bottom: 15px; font-size: 12px; }
         .section { margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
         ul { padding-left: 18px; margin-top: 5px; margin-bottom: 5px; }
-        li { margin-bottom: 3px; }
+        li { margin-bottom: 8px; }
         a { color: #3498db; text-decoration: none; }
         .important { background: #fdf2f2; padding: 8px; border-left: 4px solid #e74c3c; margin: 8px 0; font-size: 13.5px; }
         p { margin-top: 5px; margin-bottom: 5px; }
+        .steps-box { background: #f8f9fa; border: 1px solid #e9ecef; padding: 8px 12px; border-radius: 5px; margin-top: 5px; font-size: 13.5px; }
     </style>
 </head>
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="last-updated">Last Updated: July 8, 2026</p>
+<p class="last-updated">Last Updated: July 28, 2026</p>
 
 <div class="section">
     <p>Welcome to <strong>MRX Quize</strong>. This Privacy Policy explains how we handle information in our mobile application. By using this app, you agree to the terms outlined below.</p>
@@ -28,9 +29,9 @@
 
 <div class="section">
     <h2>1. Information Collection and Use</h2>
-    <p><strong>Personal Data:</strong> We are committed to your privacy. We do <strong>NOT</strong> collect, store, or share any personally identifiable information (PII) such as your Email Address, Phone Number, or Physical Location. Our app does not require any Login or Account creation.</p>
+    <p><strong>Personal Data:</strong> To provide account management, personalize your experience, and synchronize your progress, we collect personal information when you log in. This includes your <strong>Email Address, Display Name, and Profile Picture</strong> (collected via Google Sign-In or through direct manual upload).</p>
 
-    <p><strong>Local Name Input (Share to Story & Certificates):</strong> For features like "Share to Story" and generating "Achievement Certificates", the app may ask you to input your name. <strong>This name is kept strictly local on your device.</strong> It is used solely to generate the image or text for you to use and is never uploaded, stored, or processed on any external server.</p>
+    <p><strong>Local Name Input (Share to Story & Certificates):</strong> For features like "Share to Story" and generating "Achievement Certificates", the app uses your account profile name or custom input. This custom data generated for sharing is kept strictly local on your device to create images/text and is never misused.</p>
 
     <div class="important">
         <strong>Virtual Currency:</strong> The "Spin Wheel" and Quiz rewards provide virtual coins. These coins are used strictly for entertainment to unlock levels within the app. <strong>These coins have NO real-world monetary value, cannot be withdrawn, and cannot be exchanged for real currency.</strong>
@@ -45,7 +46,7 @@
         <li><strong>Full Mock Test:</strong> Designed to simulate a full-length quiz practice environment.</li>
     </ul>
     <div class="important">
-        <strong>Disclaimer:</strong> This section and its tests are created strictly for **entertainment and mock practice purposes only**. This is <strong>NOT an official exam preparation tool</strong>, nor is it affiliated with, endorsed by, or connected to any government agency or official exam conducting board.
+        <strong>Disclaimer:</strong> This section and its tests are created strictly for <strong>entertainment and mock practice purposes only</strong>. This is <strong>NOT an official exam preparation tool</strong>, nor is it affiliated with, endorsed by, or connected to any government agency or official exam conducting board.
     </div>
 
     <p><strong>Achievement Certificates:</strong> The app features a gamified achievement system. Upon completing certain milestones, users are awarded an "Achievement Certificate". <strong>These certificates are purely virtual, unofficial, and intended solely for entertainment, fun, and showing off progress to friends.</strong> They hold no legal, academic, or real-world value.</p>
@@ -53,24 +54,35 @@
 
 <div class="section">
     <h2>3. Third-Party Service Providers & Ads</h2>
-    <p>To support the development, monitor app performance, and provide rewards (Double Coins/Unlock Levels), we use third-party services that may collect information used to identify your device (via Advertising IDs or diagnostic data).</p>
+    <p>To support development, facilitate user authentication, back up progress, and provide rewards, we integrate third-party services that process data as described below:</p>
     <ul>
         <li><a href="https://www.google.com/policies/privacy/" target="_blank">Google Play Services</a></li>
         <li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank">AdMob (Rewarded & Banner Ads)</a></li>
-        <li><a href="https://firebase.google.com/support/privacy" target="_blank">Google Firebase (Analytics & Feedback)</a></li>
+        <li><a href="https://firebase.google.com/support/privacy" target="_blank">Google Firebase (Authentication, Cloud Firestore, Analytics & Feedback)</a></li>
     </ul>
     <p>AdMob may use your <strong>Google Advertising ID</strong> to show personalized ads. You can reset or opt-out of this in your device settings under Google &gt; Ads.</p>
-    <p>We use <strong>Google Firebase</strong> for diagnostic purposes and user feedback. <strong>Feedback data is only sent to and stored on Firebase when the user explicitly submits it within the app.</strong> We also analyze general app usage time to help us understand performance and improve the user experience. No personal identifying data is transmitted during this process.</p>
+    <p>We use <strong>Firebase Authentication</strong> to manage user logins and <strong>Cloud Firestore</strong> to store and sync your game progress, scores, and profile details across your devices securely.</p>
 </div>
 
 <div class="section">
-    <h2>4. Data Storage (Local Only)</h2>
-    <p>We use an on-device database (Room DB and SharedPreferences) to save your quiz progress, achievement status, high scores, and unlocked levels. <strong>This data stays 100% on your device</strong> and is never uploaded to any external server or shared with third parties.</p>
+    <h2>4. Data Storage (Cloud & Local Synchronization)</h2>
+    <p>We use local storage (Room DB and SharedPreferences) for offline functionality, which is synchronized with secure <strong>Firebase Cloud Servers</strong> when connected online. This ensures that your quiz progress, achievement status, high scores, and unlocked levels are safely backed up and accessible across your logged-in devices.</p>
 </div>
 
 <div class="section">
     <h2>5. Data Deletion Rights</h2>
-    <p>Since we do not store your data on any server, you have full control over your data. You can delete all your progress, certificates, locally inputted names, and coins by "Clearing App Data" in your device's application settings or by uninstalling the app.</p>
+    <p>We respect your right to manage and permanently delete your personal data. You can request account and data deletion through two convenient options:</p>
+    <ul>
+        <li>
+            <strong>In-App Account Deletion:</strong> If you have the application installed, you can permanently delete your profile and cloud data directly inside the app by following these steps:
+            <div class="steps-box">
+                <strong>Open App</strong> &gt; <strong>Settings</strong> &gt; <strong>Account Management</strong> &gt; <strong>Delete Account</strong> &gt; <strong>Delete Permanently</strong> &gt; <strong>Yes, Delete Permanently</strong>
+            </div>
+        </li>
+        <li>
+            <strong>Web Data Deletion Request (If App is Uninstalled):</strong> If you do not have the app installed on your device, you can submit an official account deletion request by filling out our online form here: <a href="https://forms.gle/G84PheYZ64eJHFh38" target="_blank"><strong>Request Account & Data Deletion (Google Form)</strong></a>. Upon receiving your request, all your stored user profile data and cloud records will be permanently erased from our Firebase servers.
+        </li>
+    </ul>
 </div>
 
 <div class="section">
@@ -80,7 +92,7 @@
 
 <div class="section">
     <h2>7. Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+    <p>If you have any questions about this Privacy Policy or wish to request manual deletion of your data, please contact us at:</p>
     <p><strong>Email:</strong> mrxofficial000000@gmail.com</p>
 </div>
 
